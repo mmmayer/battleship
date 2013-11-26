@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Ships.h"
 
 @interface ViewController : UIViewController
+
+@property NSString *coordinates;
+@property (weak, nonatomic) IBOutlet UILabel *CoordinatesSelectedField;
+
+- (IBAction)Button_Pressed:(id)sender;
+- (IBAction)firePressed:(id)sender;
+- (IBAction)colorPressed:(id)sender;
 
 @end

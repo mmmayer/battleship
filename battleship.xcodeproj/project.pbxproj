@@ -21,6 +21,9 @@
 		C9A6A9DB1842DCAE003469EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A6A9BD1842DCAE003469EA /* UIKit.framework */; };
 		C9A6A9E31842DCAE003469EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9A6A9E11842DCAE003469EA /* InfoPlist.strings */; };
 		C9A6A9E51842DCAE003469EA /* battleshipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A6A9E41842DCAE003469EA /* battleshipTests.m */; };
+		C9A6A9F0184432D7003469EA /* Ships.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A6A9EF184432D7003469EA /* Ships.m */; };
+		C9A6A9F218443533003469EA /* ships.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9A6A9F118443533003469EA /* ships.plist */; };
+		C9A6A9F518443E3E003469EA /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A6A9F418443E3E003469EA /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		C9A6A9E01842DCAE003469EA /* battleshipTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "battleshipTests-Info.plist"; sourceTree = "<group>"; };
 		C9A6A9E21842DCAE003469EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C9A6A9E41842DCAE003469EA /* battleshipTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = battleshipTests.m; sourceTree = "<group>"; };
+		C9A6A9EE184432D7003469EA /* Ships.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ships.h; sourceTree = "<group>"; };
+		C9A6A9EF184432D7003469EA /* Ships.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ships.m; sourceTree = "<group>"; };
+		C9A6A9F118443533003469EA /* ships.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ships.plist; sourceTree = "<group>"; };
+		C9A6A9F318443E3E003469EA /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		C9A6A9F418443E3E003469EA /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,10 @@
 		C9A6A9BF1842DCAE003469EA /* battleship */ = {
 			isa = PBXGroup;
 			children = (
+				C9A6A9F318443E3E003469EA /* Player.h */,
+				C9A6A9F418443E3E003469EA /* Player.m */,
+				C9A6A9EE184432D7003469EA /* Ships.h */,
+				C9A6A9EF184432D7003469EA /* Ships.m */,
 				C9A6A9C81842DCAE003469EA /* AppDelegate.h */,
 				C9A6A9C91842DCAE003469EA /* AppDelegate.m */,
 				C9A6A9CB1842DCAE003469EA /* Main.storyboard */,
@@ -126,6 +138,7 @@
 		C9A6A9C01842DCAE003469EA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C9A6A9F118443533003469EA /* ships.plist */,
 				C9A6A9C11842DCAE003469EA /* battleship-Info.plist */,
 				C9A6A9C21842DCAE003469EA /* InfoPlist.strings */,
 				C9A6A9C51842DCAE003469EA /* main.m */,
@@ -228,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A6A9F218443533003469EA /* ships.plist in Resources */,
 				C9A6A9D21842DCAE003469EA /* Images.xcassets in Resources */,
 				C9A6A9C41842DCAE003469EA /* InfoPlist.strings in Resources */,
 				C9A6A9CD1842DCAE003469EA /* Main.storyboard in Resources */,
@@ -250,8 +264,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A6A9D01842DCAE003469EA /* ViewController.m in Sources */,
+				C9A6A9F0184432D7003469EA /* Ships.m in Sources */,
 				C9A6A9CA1842DCAE003469EA /* AppDelegate.m in Sources */,
 				C9A6A9C61842DCAE003469EA /* main.m in Sources */,
+				C9A6A9F518443E3E003469EA /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +397,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "battleship/battleship-Prefix.pch";
 				INFOPLIST_FILE = "battleship/battleship-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -394,7 +412,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "battleship/battleship-Prefix.pch";
 				INFOPLIST_FILE = "battleship/battleship-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
