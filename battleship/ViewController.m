@@ -19,6 +19,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     NSLog(@"View Did Load");
+    
+    NSString *boardImageFileLocation = [[NSBundle mainBundle] pathForResource:@"boardImage" ofType:@"jpeg"];
+    self.boardImage = [[UIImageView alloc]initWithImage:<#(UIImage *)#>boardImageFileLocation];
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,8 +39,12 @@
 }
 - (IBAction)firePressed:(id)sender {
     self.CoordinatesSelectedField.text = nil;
-    Ships *shipping = [[Ships alloc]init];
-    [shipping newSetup];
+    
+//    Ships *shipping = [[Ships alloc]init];
+//    [shipping newSetup];
+    
+    UIAlertView *fireAlert = [[UIAlertView alloc]initWithTitle:@"Alert!" message:@"You have fired!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    [fireAlert show];
 }
 
 - (IBAction)colorPressed:(id)sender {

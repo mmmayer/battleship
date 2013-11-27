@@ -10,7 +10,6 @@
 
 @interface Ships : NSObject
 
-@property NSString *shipType;
 @property int shipSize;
 
 -(void)newSetup;

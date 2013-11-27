@@ -10,6 +10,8 @@
 
 @interface Player : NSObject
 @property NSString *playerName;
+@property int playerAge;
+
 
 
 @end

@@ -24,6 +24,9 @@
 		C9A6A9F0184432D7003469EA /* Ships.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A6A9EF184432D7003469EA /* Ships.m */; };
 		C9A6A9F218443533003469EA /* ships.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9A6A9F118443533003469EA /* ships.plist */; };
 		C9A6A9F518443E3E003469EA /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A6A9F418443E3E003469EA /* Player.m */; };
+		C9A6A9FE18469211003469EA /* GamesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A6A9FD18469211003469EA /* GamesListViewController.m */; };
+		C9A6AA01184693BD003469EA /* GameStates.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A6AA00184693BD003469EA /* GameStates.m */; };
+		C9A6AA0318469B41003469EA /* board.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C9A6AA0218469B41003469EA /* board.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,11 @@
 		C9A6A9F118443533003469EA /* ships.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ships.plist; sourceTree = "<group>"; };
 		C9A6A9F318443E3E003469EA /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		C9A6A9F418443E3E003469EA /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		C9A6A9FC18469211003469EA /* GamesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamesListViewController.h; sourceTree = "<group>"; };
+		C9A6A9FD18469211003469EA /* GamesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamesListViewController.m; sourceTree = "<group>"; };
+		C9A6A9FF184693BD003469EA /* GameStates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStates.h; sourceTree = "<group>"; };
+		C9A6AA00184693BD003469EA /* GameStates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStates.m; sourceTree = "<group>"; };
+		C9A6AA0218469B41003469EA /* board.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = board.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,11 +132,15 @@
 				C9A6A9F418443E3E003469EA /* Player.m */,
 				C9A6A9EE184432D7003469EA /* Ships.h */,
 				C9A6A9EF184432D7003469EA /* Ships.m */,
+				C9A6A9FF184693BD003469EA /* GameStates.h */,
+				C9A6AA00184693BD003469EA /* GameStates.m */,
 				C9A6A9C81842DCAE003469EA /* AppDelegate.h */,
 				C9A6A9C91842DCAE003469EA /* AppDelegate.m */,
 				C9A6A9CB1842DCAE003469EA /* Main.storyboard */,
 				C9A6A9CE1842DCAE003469EA /* ViewController.h */,
 				C9A6A9CF1842DCAE003469EA /* ViewController.m */,
+				C9A6A9FC18469211003469EA /* GamesListViewController.h */,
+				C9A6A9FD18469211003469EA /* GamesListViewController.m */,
 				C9A6A9D11842DCAE003469EA /* Images.xcassets */,
 				C9A6A9C01842DCAE003469EA /* Supporting Files */,
 			);
@@ -139,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				C9A6A9F118443533003469EA /* ships.plist */,
+				C9A6AA0218469B41003469EA /* board.jpeg */,
 				C9A6A9C11842DCAE003469EA /* battleship-Info.plist */,
 				C9A6A9C21842DCAE003469EA /* InfoPlist.strings */,
 				C9A6A9C51842DCAE003469EA /* main.m */,
@@ -241,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A6AA0318469B41003469EA /* board.jpeg in Resources */,
 				C9A6A9F218443533003469EA /* ships.plist in Resources */,
 				C9A6A9D21842DCAE003469EA /* Images.xcassets in Resources */,
 				C9A6A9C41842DCAE003469EA /* InfoPlist.strings in Resources */,
@@ -265,6 +279,8 @@
 			files = (
 				C9A6A9D01842DCAE003469EA /* ViewController.m in Sources */,
 				C9A6A9F0184432D7003469EA /* Ships.m in Sources */,
+				C9A6A9FE18469211003469EA /* GamesListViewController.m in Sources */,
+				C9A6AA01184693BD003469EA /* GameStates.m in Sources */,
 				C9A6A9CA1842DCAE003469EA /* AppDelegate.m in Sources */,
 				C9A6A9C61842DCAE003469EA /* main.m in Sources */,
 				C9A6A9F518443E3E003469EA /* Player.m in Sources */,

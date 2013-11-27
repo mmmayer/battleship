@@ -11,6 +11,8 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *boardImage;
+
 @property NSString *coordinates;
 @property (weak, nonatomic) IBOutlet UILabel *CoordinatesSelectedField;
 
