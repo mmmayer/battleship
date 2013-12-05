@@ -12,16 +12,40 @@
 
 @end
 
+
+
 @implementation ViewController
+
+@synthesize tapImageName;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    NSLog(@"View Did Load");
     
-    NSString *boardImageFileLocation = [[NSBundle mainBundle] pathForResource:@"boardImage" ofType:@"jpeg"];
-    self.boardImage = [[UIImageView alloc]initWithImage:<#(UIImage *)#>boardImageFileLocation];
+    //Create and initilaize a tap gesture
+    UITapGestureRecognizer *tapRecognizier = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(showGestureForTapRecognizer:)];
+    
+   //Specify that the gesture must be a single tap (don't think I need)
+//    tapRecognizier.numberOfTapsRequired = 1;
+//    tapRecognizier.numberOfTouchesRequired = 1;
+    
+    //Add the tap gesture recognizer to the view
+    [self.boardImage addGestureRecognizer:tapRecognizier];
+    NSLog(@"gesture was added to boardImage");
+}
+
+//Action taken on the Gesture
+-(IBAction)showGestureForTapRecognizer:(UITapGestureRecognizer *)recognizer {
+    CGPoint location = [recognizer locationInView:self.boardImage];
+    [self drawImageForGestureRecognizer:recognizer atPoint: location];
+//    [UIView animateWithDuration:0.5 animations:^{self.boardImage.alpha = 0.0;
+//}];
+}
+
+-(void)drawImageForGestureRecognizer:(UIGestureRecognizer *)recognizer atPoint:(CGPoint)centerPoint {
+    NSLog(@"Map was tapped");
+    // tapImageName = @"tap.png";
 }
 
 - (void)didReceiveMemoryWarning

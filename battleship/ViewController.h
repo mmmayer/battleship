@@ -12,8 +12,11 @@
 @interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *boardImage;
-
+@property (nonatomic, strong) IBOutlet UITapGestureRecognizer *tapRecognizer;
+@property (nonatomic, strong) IBOutlet UIImageView *touchImage;
 @property NSString *coordinates;
+@property NSString *tapImageName;
+
 @property (weak, nonatomic) IBOutlet UILabel *CoordinatesSelectedField;
 
 - (IBAction)Button_Pressed:(id)sender;

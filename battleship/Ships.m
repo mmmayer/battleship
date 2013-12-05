@@ -23,8 +23,10 @@
     [destroyer setShipSize:3];
     Ships *patrolBoat = [[Ships alloc]init];
     [patrolBoat setShipSize:2];
+    //Image associated with it
+
     
-    NSMutableArray *allBoats = [[NSMutableArray alloc]initWithObjects:battleship, aircraftCarrier, submarine, destroyer, patrolBoat, nil];
+//    NSMutableArray *allBoats = [[NSMutableArray alloc]initWithObjects:battleship, aircraftCarrier, submarine, destroyer, patrolBoat, nil];
     
 //    NSString *shipsFile = [[NSBundle mainBundle] pathForResource:@"ships" ofType:@"plist"];
 //    NSDictionary *shipList = [[NSDictionary alloc]initWithContentsOfFile:shipsFile];

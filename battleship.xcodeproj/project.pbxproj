@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9646C26184E9B03000EE738 /* satelite_ocean_view_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9646C25184E9B03000EE738 /* satelite_ocean_view_2.jpg */; };
+		C9646C28184FADB9000EE738 /* tap.png in Resources */ = {isa = PBXBuildFile; fileRef = C9646C27184FADB9000EE738 /* tap.png */; };
 		C9A6A9BA1842DCAE003469EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A6A9B91842DCAE003469EA /* Foundation.framework */; };
 		C9A6A9BC1842DCAE003469EA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A6A9BB1842DCAE003469EA /* CoreGraphics.framework */; };
 		C9A6A9BE1842DCAE003469EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A6A9BD1842DCAE003469EA /* UIKit.framework */; };
@@ -26,7 +28,6 @@
 		C9A6A9F518443E3E003469EA /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A6A9F418443E3E003469EA /* Player.m */; };
 		C9A6A9FE18469211003469EA /* GamesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A6A9FD18469211003469EA /* GamesListViewController.m */; };
 		C9A6AA01184693BD003469EA /* GameStates.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A6AA00184693BD003469EA /* GameStates.m */; };
-		C9A6AA0318469B41003469EA /* board.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C9A6AA0218469B41003469EA /* board.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C9646C25184E9B03000EE738 /* satelite_ocean_view_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = satelite_ocean_view_2.jpg; sourceTree = "<group>"; };
+		C9646C27184FADB9000EE738 /* tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tap.png; sourceTree = "<group>"; };
 		C9A6A9B61842DCAE003469EA /* battleship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = battleship.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A6A9B91842DCAE003469EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C9A6A9BB1842DCAE003469EA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -68,7 +71,6 @@
 		C9A6A9FD18469211003469EA /* GamesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamesListViewController.m; sourceTree = "<group>"; };
 		C9A6A9FF184693BD003469EA /* GameStates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStates.h; sourceTree = "<group>"; };
 		C9A6AA00184693BD003469EA /* GameStates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStates.m; sourceTree = "<group>"; };
-		C9A6AA0218469B41003469EA /* board.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = board.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,8 +152,9 @@
 		C9A6A9C01842DCAE003469EA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C9646C27184FADB9000EE738 /* tap.png */,
+				C9646C25184E9B03000EE738 /* satelite_ocean_view_2.jpg */,
 				C9A6A9F118443533003469EA /* ships.plist */,
-				C9A6AA0218469B41003469EA /* board.jpeg */,
 				C9A6A9C11842DCAE003469EA /* battleship-Info.plist */,
 				C9A6A9C21842DCAE003469EA /* InfoPlist.strings */,
 				C9A6A9C51842DCAE003469EA /* main.m */,
@@ -254,10 +257,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9A6AA0318469B41003469EA /* board.jpeg in Resources */,
 				C9A6A9F218443533003469EA /* ships.plist in Resources */,
 				C9A6A9D21842DCAE003469EA /* Images.xcassets in Resources */,
 				C9A6A9C41842DCAE003469EA /* InfoPlist.strings in Resources */,
+				C9646C28184FADB9000EE738 /* tap.png in Resources */,
+				C9646C26184E9B03000EE738 /* satelite_ocean_view_2.jpg in Resources */,
 				C9A6A9CD1842DCAE003469EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +500,7 @@
 				C9A6A9EA1842DCAE003469EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9A6A9EB1842DCAE003469EA /* Build configuration list for PBXNativeTarget "battleshipTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +509,7 @@
 				C9A6A9ED1842DCAE003469EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
