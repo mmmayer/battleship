@@ -12,5 +12,4 @@
 @property NSString *playerName;
 @property int playerAge;
 
-
 @end
